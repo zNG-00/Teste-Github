@@ -1,0 +1,64 @@
+/*  PSEUDO CLASSES
+
+    :active > quando o elemento esta ativo, ou seja, esta sendo pressionado pelo clique por exemplo;
+    :visited > seleciona o link que ja foi visitado e deixa pintado de outra cor;
+    :hover > quando o mouse passa em cima do elemento;
+    :checked > usado em radio / checkbok / select;
+    :disabled > elemento desabilitado / button / input;
+    :enabled > elemento esta habilitado;
+    :focus > é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleicona o elemento;
+    :read-only > sleciona input ou textarea que são apenas leitura;
+    :empty > elemento que não tem filho;
+
+    :firt-child > primeiro filho / ex: primeira li de uma ul / primeiro span de uma div;
+    :first-of-type > primeiro elemento de seu tipo entre os filhos de seu elemento pai;
+    :last-child > último filho;
+    :last-of-type > último elemento de seu tipo entre os filhos de seu elemento pai;
+    :not() > estiliza os elementos, exceto o que esta dentro do ();
+    :nth-child() > seleciona o elemento baseado na sua posição. Ex: :nth-child(3);
+    :nth-last-child() > seleciona o elemento baseado na sua posição, contando de trás para frente.
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    color: green;
+}
+p:hover {
+    color: blue;
+}
+
+input:disabled {
+    width: 100px;
+    height: 100px;
+}
+
+.inputv2:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+.inputv3:read-only {
+    border: 1px solid blue
+}
+
+.container {
+height: 100px;
+width: 100px;
+background-color: green;
+}
+
+.container:empty {
+    background-color: violet;
+}
+

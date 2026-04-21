@@ -1,0 +1,43 @@
+/* POSITION
+
+    position: static (padrão) - Não Aceita valores de top, botton, right e left.
+    position: fixed- fixa o elemento na tela
+    position: sticky - age como um adesivo, fixa o elemento só onde eu determianr
+    position: relative - posição relativa a posição inicial dele
+    position: absolute - posição absoluta(fixa) a algum elemento ou a pagina
+        - SE não tiver pai / pai for static -> Posiciona referente a pagina
+        - SE o pai não for static -> Posiciona referente ao pai
+
+Propriedades:
+    - top
+    - botton
+    - left
+    - right
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: blueviolet;
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+}
+
+.div-son-2 {
+        height: 150px;
+    width: 150px;
+    background-color: red
+}
